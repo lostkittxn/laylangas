@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    touch-action: none;
 }
 
 
 html {
-    touch-action: manipulation;
-    -ms-touch-action: manipulation;
-    zoom: 1;
+    touch-action: none;
+    -ms-touch-action: none;
     -ms-content-zooming: none;
     }
 
