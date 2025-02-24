@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    touch-action: pan-y;
 }
 
 
 html {
-    touch-action: manipulation;
+    touch-action: pan-y;
     -ms-touch-action: manipulation;
     zoom: 1;
     -ms-content-zooming: none;
