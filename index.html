@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <meta name="apple-mobile-web-app-capable" content="yes" >
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>laylangas</title>
+    <link rel="icon" type="image/x-icon" href="assets/fav.gif">
+    <link href="https://fonts.cdnfonts.com/css/forma-djr-banner" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+
+  </head>
+  <body>
+    <audio src="assets/audio.mp3" autoplay="autoplay" loop="loop"></audio>
+    <div class="navbar">
+      <div class="nav mobile">  
+        <label id="menu_toggle_label" for="menu_toggle"> <div class="navlink"><i class="material-icons" style="font-size:32px;">menu</i></div></label>
+        <div class="vl"></div> 
+        <h3>Inicio</h3>
+      </div>
+      <nav class="nav desktop">  
+        <div class="vl"></div>
+        <a href="#00"><div class="navlink curpage"><p>Inicio</p></div></a>
+        <div class="vl"></div>
+        <a href="#01"><div class="navlink"><p>Musica</p></div></a>
+        <div class="vl"></div>
+        <a href="#02"><div class="navlink"><p>Peliculas</p></div></a>
+        <div class="vl"></div>
+        <a href="#03"><div class="navlink"><p>App</p></div></a>
+        <div class="vl"></div>
+        <a href="#04"><div class="navlink"><p>Sandwiches</p></div></a>
+        <div class="vl"></div>
+      </nav>
+    </div>
+    
+    <input id="menu_toggle" type="checkbox">
+    <nav class="menu_mobile">  
+      <a href="#00"><div class="navlink curpage"><p>Inicio</p></div></a>
+      <div class="vl"></div>
+      <a href="#01"><div class="navlink"><p>Musica</p></div></a>
+      <div class="vl"></div>
+      <a href="#02"><div class="navlink"><p>Peliculas</p></div></a>
+      <div class="vl"></div>
+      <a href="#03"><div class="navlink"><p>App</p></div></a>
+      <div class="vl"></div>
+      <a href="#04"><div class="navlink"><p>Sandwiches</p></div></a>
+    </nav>
+    
+    <div class="content">
+      
+      <header class="window">
+        <div class="window title big">
+        <p>Holaaaa me llamo Layla :P</p>
+        <h1>Bienvenides a mi Pagina</h1>
+        <img src="assets/logo.gif" alt="Logo" class="logo">
+        <p>Adaptativa y Responsiva</p>
+      </div>
+      </header>
+    
+      <div class="window">
+        <div class="window title">
+          <p id="01">Albumes Me Gustan</p>
+        </div>
+         <div class="window content">
+        <main>
+      <div id="carousel">
+
+        <div class="hideLeft">
+         <img src="assets/covers/01.jpg">
+       </div>
+ 
+       <div class="prevLeftSecond">
+         <img src="assets/covers/02.jpg">
+       </div>
+ 
+       <div class="prev">
+         <img src="assets/covers/03.jpg">
+       </div>
+ 
+       <div class="selected">
+         <img src="assets/covers/04.jpg">
+       </div>
+ 
+       <div class="next">
+         <img src="assets/covers/05.jpg">
+       </div>
+ 
+       <div class="nextRightSecond">
+         <img src="assets/covers/06.jpg">
+       </div>
+     
+    </main>
+    </div>
+  </div>
+
+  <div class="window">
+    <div class="window title">
+      <p id="02">Peliculas Me Gustan</p>
+    </div>
+     <div class="window content">
+    <main>
+  <div id="carousel2">
+
+    <div class="hideLeft">
+     <img src="assets/covers/01b.jpg">
+   </div>
+
+   <div class="prevLeftSecond">
+     <img src="assets/covers/02b.jpg">
+   </div>
+
+   <div class="prev">
+     <img src="assets/covers/03b.jpg">
+   </div>
+
+   <div class="selected">
+     <img src="assets/covers/04b.jpg">
+   </div>
+
+   <div class="next">
+     <img src="assets/covers/05b.jpg">
+   </div>
+
+   <div class="nextRightSecond">
+     <img src="assets/covers/06b.jpg">
+   </div>
+ </div>
+ 
+</main>
+</div>
+</div>
+
+<div class="window">
+  <div class="window title">
+    <p id="03">App</p>
+  </div>
+   <div class="window content">
+    <div class="container">
+      <div><img src="assets/logo.png" alt="Logo" class="logo"></div>
+      <div>
+          <h2>Ingresa tus 4 Peliculas Favoritas</h2>
+          <input type="text" id="peliculaInput" placeholder="Nombre de la película">
+          <input type="file" id="imagenInput" accept="image/*">
+          <button onclick="agregarPelicula()">Agregar</button>
+      </div>
+      <div>
+          <h2>Peliculas Favoritas</h2>
+          <ul id="peliculasFavoritas"></ul>
+      </div>
+      <div>
+          <h2>Watchlist</h2>
+          <input type="text" id="watchlistInput" placeholder="Nombre de la película">
+          <input type="file" id="watchlistImagenInput" accept="image/*"> 
+          <button onclick="agregarAWatchlist()">Agregar a Watchlist</button>
+          <ul id="watchlist"></ul>
+      </div>
+  </div>
+</div>
+</div>
+
+  <div class="window">
+    <div class="window title">
+      <p id="04">Toma uno</p>
+    </div>
+     <div class="window content">
+      <div>
+        <select id="imagenSelector" onchange="mostrarImagenSeleccionada()">
+            <option value="">Selecciona una opción</option>
+            <option value="assets/img/01.gif">01</option>
+            <option value="assets/img/02.gif">02</option>
+            <option value="assets/img/03.gif">03</option>
+        </select>
+    </div>
+    <div id="imagenSeleccionada" style="margin-top: 20px;">
+        <img id="imagen" src="" style="max-width: 100%; display: none;">
+    </div>
+    </div>
+  </div>
+  
+  
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'>
+  </script><script src="JS/script.js"></script>
+  <script src="JS/app.js">
+  </script><script src="JS/sandwiches.js"></script>
+  
+  <footer>
+    <img src="assets/btns/01.gif" alt="Logo" class="ad">
+    <img src="assets/btns/05.gif" alt="Logo" class="ad">
+    <img src="assets/btns/04.gif" alt="Logo" class="ad">
+    <img src="assets/btns/02.gif" alt="Logo" class="ad">
+    <img src="assets/btns/03.gif" alt="Logo" class="ad">
+  </footer>
+
+  </body>
+</html>
