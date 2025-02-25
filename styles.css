@@ -29,13 +29,6 @@
     touch-action: pan-y;
 }
 
-html {
-    touch-action: pan-y;
-    -ms-touch-action: manipulation;
-    zoom: 1;
-    -ms-content-zooming: none;
-    }
-
 
 h1{
   font-family: 'Forma DJR Display', sans-serif;;
@@ -786,7 +779,7 @@ button {
     padding: 10px;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 9999px;
     cursor: pointer;
     transition: background-color 0.3s; 
 }
