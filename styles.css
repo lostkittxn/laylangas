@@ -13,11 +13,12 @@ html {
     -ms-content-zooming: none;
     }
 
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    cursor: url("assets/wii.png"), default;
+    cursor: url("assets/wii"), default;
 }
 
 header {
@@ -52,6 +53,7 @@ nav a {
 nav a:hover {
     background-color: #F9F5EC;
     color: black;
+    cursor: url("assets/wii-pointer"), pointer;
 }
 
 .container {
@@ -82,6 +84,7 @@ nav a:hover {
 .tile img:hover {
     transform: scale(1.050);
     border: 5px solid #9370D8;
+    cursor: url("assets/wii-pointer"), pointer;
 }
 
 .info {
@@ -101,15 +104,15 @@ nav a:hover {
     flex-wrap: wrap;
     padding: 10px 20px;
     text-align: center;
-    background-image: url('assets/head.gif');
+    background-image: url('assets/bg/head.gif');
 }
 
 .parallax2 {
-    background-image: url('assets/rose5.png');
+    background-image: url('assets/bg/rose5.png');
 }
 
 .parallax3 {
-    background-image: url('assets/roxy6.png');
+    background-image: url('assets/bg/roxy6.png');
 }
 
 .content {
@@ -121,7 +124,7 @@ nav a:hover {
 }
 
 footer {
-    background-image: url("assets/head.gif");
+    background-image: url("assets/bg/head.gif");
     background-repeat: repeat;
     padding: 10px 20px;
     text-align: center;
@@ -153,6 +156,7 @@ button {
 
 button:hover {
     background-color: #6b4fa2;
+    cursor: url("assets/wii-pointer"), pointer;
 }
 
 ul {
