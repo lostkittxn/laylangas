@@ -222,6 +222,7 @@ li button:hover {
 .container2 h1, h2 {
     color: #333;
     text-align: center;
+    padding: 20px;
 }
 
 select {
