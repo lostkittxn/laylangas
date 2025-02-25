@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    touch-action: pan-y;
+}
+
+
+html {
+    touch-action: pan-y;
+    -ms-touch-action: manipulation;
+    zoom: 1;
+    -ms-content-zooming: none;
+    }
+
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    cursor: url("assets/wii"), auto;
+}
+
+header {
+    padding: 10px 20px;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
+.logo {
+    width: fit-content; 
+    padding: 20px;
+    max-width: 100%; 
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #9370D8;
+    justify-content: center; 
+}
+
+nav a {
+    color: #F9F5EC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; 
+}
+
+nav a:hover {
+    background-color: #F9F5EC;
+    color: black;
+    cursor: url("assets/wii-pointer"), pointer;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cuadro {
+    background-color: #F9F5EC;
+    border: 4px solid #9370D8;
+    border-radius: 5px;
+    margin: 10px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cuadro img {
+    width: 100%;
+}
+
+.tile img {
+    transition: transform 0.3s;
+}
+
+.tile img:hover {
+    transform: scale(1.050);
+    border: 5px solid #9370D8;
+    cursor: url("assets/wii-pointer"), pointer;
+}
+
+.info {
+    padding: 15px;
+}
+
+.parallax {
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+.parallax1 {
+    color: white;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    text-align: center;
+    background-image: url('assets/bg/head.gif');
+}
+
+.parallax2 {
+    background-image: url('assets/bg/rose5.png');
+}
+
+.parallax3 {
+    background-image: url('assets/bg/roxy6.png');
+}
+
+.content {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #9370D8;
+    color: white;
+}
+
+footer {
+    background-image: url("assets/bg/head.gif");
+    background-repeat: repeat;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.ad {
+    max-width: 100%; 
+    height: auto;
+}
+
+input {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+button {
+    width: 100%; 
+    padding: 10px;
+    background-color: #9370D8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: #6b4fa2;
+    cursor: url("assets/wii-pointer"), pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background-color: #dc3545;
+    width: auto;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+.container2 {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #9370D8;
+    display: flex;
+    flex-direction: column;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.container2 > div {
+    width: 100%; 
+    text-align: center; 
+}
+
+.container2 > div:first-child {
+    display: flex;
+    justify-content: center; 
+}
+
+.logo2 {
+    width: 300px; 
+    padding: 20px;
+    max-width: 100%; 
+    height: auto;
+}
+
+.container2 h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: url("assets/wii-pointer"), pointer;
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .info {
+        padding: 10px;
+    }
+}
