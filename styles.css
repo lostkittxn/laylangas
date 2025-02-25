@@ -631,7 +631,7 @@ html, body, main {
     opacity: 1;
   }
   #carousel div img {
-    width: 400px;
+    width: 300px;
     transition: width 1s;
   }
   #carousel div.hideLeft {
@@ -656,7 +656,7 @@ html, body, main {
     transform: translateY(50px) translateX(-50%);
   }
   #carousel div.prev img {
-    width: 300px;
+    width: 200px;
   }
   #carousel div.prevLeftSecond {
     z-index: 4;
@@ -665,7 +665,7 @@ html, body, main {
     opacity: 0.7;
   }
   #carousel div.prevLeftSecond img {
-    width: 200px;
+    width: 100px;
   }
   #carousel div.selected {
     z-index: 10;
@@ -678,7 +678,7 @@ html, body, main {
     transform: translateY(50px) translateX(-50%);
   }
   #carousel div.next img {
-    width: 300px;
+    width: 200px;
   }
   #carousel div.nextRightSecond {
     z-index: 4;
@@ -687,7 +687,7 @@ html, body, main {
     opacity: 0.7;
   }
   #carousel div.nextRightSecond img {
-    width: 200px;
+    width: 100px;
   }
     
     #carousel2 {
@@ -705,7 +705,7 @@ html, body, main {
     }
     
     #carousel2 div img {
-      width: 400px;
+      width: 300px;
       transition: width 1s;
     }
     #carousel2 div.hideLeft {
@@ -730,7 +730,7 @@ html, body, main {
       transform: translateY(50px) translateX(-50%);
     }
     #carousel2 div.prev img {
-      width: 300px;
+      width: 200px;
     }
     #carousel2 div.prevLeftSecond {
       z-index: 4;
@@ -739,7 +739,7 @@ html, body, main {
       opacity: 0.7;
     }
     #carousel2 div.prevLeftSecond img {
-      width: 200px;
+      width: 100px;
     }
     #carousel2 div.selected {
       z-index: 10;
@@ -752,7 +752,7 @@ html, body, main {
       transform: translateY(50px) translateX(-50%);
     }
     #carousel2 div.next img {
-      width: 300px;
+      width: 200px;
     }
     #carousel2 div.nextRightSecond {
       z-index: 4;
@@ -761,7 +761,7 @@ html, body, main {
       opacity: 0.7;
     }
     #carousel2 div.nextRightSecond img {
-      width: 200px;
+      width: 100px;
     }
     
   
