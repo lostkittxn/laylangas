@@ -36,10 +36,9 @@ h1{
 
   body {
     margin: 0;
-    background: url("assets/bg.jpg") no-repeat;
-    background-size: cover;
+    background: url("assets/bg.jpg") repeat;
+    background-size: fill;
     background-attachment: fixed;
-    background-color: #023219;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -861,11 +860,8 @@ li button:hover {
 }  
 
 footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
+  padding: 10px 20px;
+  text-align: center;
 }
 
 .ad {
