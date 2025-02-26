@@ -26,22 +26,6 @@ function moveToSelected(element) {
 
 }
 
-// Eventos teclado
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
-        moveToSelected('prev');
-        break;
-
-        case 39: // right
-        moveToSelected('next');
-        break;
-
-        default: return;
-    }
-    e.preventDefault();
-});
-
 $('#carousel div').click(function() {
   moveToSelected($(this));
 });
@@ -81,22 +65,6 @@ function moveToSelected(element) {
   $(prevSecond).prevAll().removeClass().addClass('hideLeft');
 
 }
-
-// Eventos teclado
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
-        moveToSelected('prev');
-        break;
-
-        case 39: // right
-        moveToSelected('next');
-        break;
-
-        default: return;
-    }
-    e.preventDefault();
-});
 
 $('#carousel2 div').click(function() {
   moveToSelected($(this));
